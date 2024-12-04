@@ -19,17 +19,13 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         // 测试减法
         assertEquals(6, calculator.subtract(10, 4));
-
-        testMultiply();
     }
 
     @Test
     void testMultiply() {
         Calculator calculator = new Calculator();
-
         // 测试乘法
         assertEquals(42, calculator.multiply(7, 6));
-
     }
 
     @Test
@@ -47,7 +43,6 @@ public class CalculatorTest {
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
             calculator.divide(10, 0);
         });
-
         // 验证异常消息
         assertEquals("不能除以零", exception.getMessage());
     }
