@@ -1,4 +1,4 @@
-package org.tw.kata5;
+package org.tw.kata6;
 
 public class Book {
 
